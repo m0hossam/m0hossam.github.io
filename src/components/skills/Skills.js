@@ -26,10 +26,10 @@ export default class Skills extends React.Component{
                 <h1 className="section-header">My Skills</h1>
                 <div className="skills-content">
                     <div className="tabs-list">
-                        <button className="tab-button active" onClick={(e) => this.openTab('languages',e)}>Languages</button>
-                        <button className="tab-button" onClick={(e) => this.openTab('technologies',e)}>Technologies</button>
-                        <button className="tab-button" onClick={(e) => this.openTab('sciences',e)}>Sciences</button>
-                        <button className="tab-button" onClick={(e) => this.openTab('activities',e)}>Activities</button>
+                        <button type="button" className="tab-button active" onClick={(e) => this.openTab('languages',e)}>Languages</button>
+                        <button type="button" className="tab-button" onClick={(e) => this.openTab('technologies',e)}>Technologies</button>
+                        <button type="button" className="tab-button" onClick={(e) => this.openTab('sciences',e)}>Sciences</button>
+                        <button type="button" className="tab-button" onClick={(e) => this.openTab('activities',e)}>Activities</button>
                     </div>
                     <div className="tabs-content">
                         <div id="languages" className="tab-content">
