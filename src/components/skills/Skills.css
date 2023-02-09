@@ -1,0 +1,87 @@
+/* Skills Section */
+
+#skills{
+    color: var(--main-text);
+    padding-top: 15%;
+}
+
+.skills-content{
+    display: flex;
+}
+
+.tabs-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-button{
+    font-family: var(--header-text-font-family);
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-left: 2px solid var(--tab-button);
+    color: var(--main-text);
+    transition-duration: 0.5s;
+}
+
+.tab-button:hover{
+    background-color: var(--light-container);
+    color: var(--highlight);
+    cursor: pointer;
+}
+
+.tab-button.active{
+    border-left: 2px solid var(--highlight);
+    background-color: var(--light-container);
+    color: var(--highlight);
+}
+
+.tabs-content{
+    margin-left: 5%;
+    width: 40%;
+}
+
+.tab-header{
+    color: var(--highlight);
+}
+
+.tab-content ul li{
+    margin: 10px;
+}
+
+.tab-content ul li::marker{
+    content: ">  ";
+    color: var(--highlight);
+    font-weight: bold;
+}
+
+#technologies,#sciences,#activities
+{
+    display: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 450px){
+    .skills-content{
+        flex-direction: column;
+    }
+    .tabs-list{
+        width: 90vw;
+        flex-direction: row;
+        overflow-x: scroll;
+    }
+    .tab-button{
+        border: none;
+        border-top: 2px solid var(--tab-button);
+    }
+    .tab-button.active{
+        border: none;
+        border-top: 2px solid var(--highlight);
+    }    
+    .tabs-content{
+        margin-top: 5%;
+        margin-left: 0;
+        width: 100%;
+    }
+}

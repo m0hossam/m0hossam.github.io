@@ -1,0 +1,43 @@
+/* Side email bar */
+
+#emailbar{
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: auto;
+    right: 3%;
+}
+
+#emailbar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#emailbar ul li{
+    padding: 10px;
+}
+
+.side-email-link{
+    font-size: 1em;
+    color: var(--main-text);
+    writing-mode: vertical-lr;
+    letter-spacing: 2px;
+    transition-duration: 0.5s;
+}
+
+.side-email-link:hover{
+    color: var(--highlight);
+    transform: scale(1.1);
+}
+
+/* Media Queries */
+
+@media (max-width: 930px){
+    #emailbar{
+        display: none;
+    }
+}

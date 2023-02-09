@@ -1,0 +1,84 @@
+/* Projects Section */
+
+#projects{
+    color: var(--main-text);
+    padding-top: 15%; 
+}
+
+.project{
+    display: flex;
+    align-items: center;
+}
+
+.project-content{
+    width: 50%;
+}
+
+.project-title{
+    font-family: var(--header-text-font-family);
+    color: var(--highlight);
+    font-size: 1.5em;
+}
+
+.project-desc{
+    background-color: var(--light-container);
+    color: var(--main-text);
+    padding: 30px;
+    transition-duration: 0.5s;
+    border-radius: 15px;
+}
+
+.project-desc:hover{
+    box-shadow: 0 0 10px 15px var(--light-container);
+}
+
+.project-tag-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.project-tag-list li{
+    padding: 10px;
+    color: var(--highlight);
+}
+
+.responsive-project-image{
+    display: none;
+}
+
+.project-image{
+    width: 50%;
+    margin-left: -15%;
+    z-index: -1;
+}
+
+.project-image img{
+    border-radius: 5%;
+    border: 2px solid var(--light-container);
+}
+
+#chess-image{
+    width: 510px;
+    height: auto;
+}
+
+/* Media Queries */
+
+@media (max-width: 930px){
+    .project-tag-list{
+        justify-content: space-evenly;
+        padding: 0;
+    }
+    .project-image{
+        display: none;
+    }
+    .responsive-project-image{
+        display: block;
+        border-radius: 5%;
+        border: 2px solid var(--light-container);
+    }
+    .project-content{
+        width: 100%;
+    }
+}

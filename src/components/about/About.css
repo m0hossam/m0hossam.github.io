@@ -1,0 +1,40 @@
+/* About Section */
+
+#about{
+    color: var(--main-text);
+    padding-top: 15%;
+    font-size: 1.25em;
+}
+
+.about-content{
+    display: flex;
+}
+
+.about-content p{
+    max-width: 500px;
+}
+
+.about-content p span{
+    color: var(--highlight);
+}
+
+.coder-photo{
+    width: 600px;
+    height: 200px;
+}
+
+/* Media Queries */
+
+@media (max-width: 930px){
+    .about-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-content p{
+        align-self: flex-start;
+    }
+    .coder-photo{
+        width: 100%;
+        height: 100%;
+    }
+}

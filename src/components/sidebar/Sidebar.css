@@ -1,0 +1,46 @@
+/* Side icons bar */
+
+#sidebar{
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 3%;
+    right: auto;
+}
+
+.sidebar-side{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-side li{
+    padding: 10px;
+}
+
+.side-link{
+    color: var(--main-text);
+}
+
+.side-logo{
+    transition: transform 0.5s;
+}
+
+.side-logo:hover{
+    transform: scale(1.2);
+}
+
+.side-logo:hover path{
+    fill: var(--highlight);
+}
+
+/* Media Queries */
+
+@media (max-width: 930px){
+    #sidebar{
+        display: none;
+    }
+}
