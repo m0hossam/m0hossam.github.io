@@ -36,7 +36,10 @@
 
 .mylogo{
     margin-right: auto;
-    border-radius: 50%;
+}
+
+.mylogo:hover svg circle{
+    fill: var(--light-container);
 }
 
 .resume{
