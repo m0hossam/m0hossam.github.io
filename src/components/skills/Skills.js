@@ -1,9 +1,20 @@
 import React from 'react';
 import './Skills.css';
 
+function TabContent(props){
+    const tablistItems = props.tablistItems;
+    const listItems = tablistItems.map((listItem,index) => <li key={index}>{listItem}</li>)
+    return (
+        <div id={props.id} className="tab-content">
+            <h3 className="tab-header">{props.tabHeader}</h3>
+            <ul>{listItems}</ul>
+        </div>
+    );
+}
+
 export default class Skills extends React.Component{
 
-    openTab = (tabName,e) => {
+    handleClick = (tabName,e) => {
         var i, tabs, tabButtons;
         
         tabs = document.getElementsByClassName("tab-content");
@@ -26,46 +37,29 @@ export default class Skills extends React.Component{
                 <h1 className="section-header">My Skills</h1>
                 <div className="skills-content">
                     <div className="tabs-list">
-                        <button type="button" className="tab-button active" onClick={(e) => this.openTab('languages',e)}>Languages</button>
-                        <button type="button" className="tab-button" onClick={(e) => this.openTab('technologies',e)}>Technologies</button>
-                        <button type="button" className="tab-button" onClick={(e) => this.openTab('sciences',e)}>Sciences</button>
-                        <button type="button" className="tab-button" onClick={(e) => this.openTab('activities',e)}>Activities</button>
+                        <button type="button" className="tab-button active" onClick={(e) => this.handleClick('languages',e)}>Languages</button>
+                        <button type="button" className="tab-button" onClick={(e) => this.handleClick('technologies',e)}>Technologies</button>
+                        <button type="button" className="tab-button" onClick={(e) => this.handleClick('sciences',e)}>Sciences</button>
+                        <button type="button" className="tab-button" onClick={(e) => this.handleClick('activities',e)}>Activities</button>
                     </div>
                     <div className="tabs-content">
-                        <div id="languages" className="tab-content">
-                            <h3 className="tab-header">Programming languages I'm familiar with</h3>
-                            <ul>
-                                <li>C</li>
-                                <li>C++</li>
-                                <li>C#</li>
-                                <li>JavaScript (+HTML/CSS)</li>
-                                <li>Python</li>
-                            </ul>
-                        </div>
-                        <div id="technologies" className="tab-content">
-                            <h3 className="tab-header">Technologies I'm familiar with</h3>
-                            <ul>
-                                <li>ReactJS</li>
-                            </ul>
-                        </div>
-                        <div id="sciences" className="tab-content">
-                            <h3 className="tab-header">Theory I've studied</h3>
-                            <ul>
-                                <li>Data Structures & Algorithms</li>
-                                <li>Object-Oriented Programming</li>
-                            </ul>
-                        </div>
-                        <div id="activities" className="tab-content">
-                            <h3 className="tab-header">Student activities I've participated in</h3>
-                            <ul>
-                                <li>ICPC: Participated in the 2022 ECPC after
-                                    qualifying in the ECPC Qualifications. 
-                                </li>
-                                <li>IEEE: Trained in the IEEExtreme Programming team
-                                    with IEEE MUSB.
-                                </li>
-                            </ul>
-                        </div>
+
+                        <TabContent id="languages"
+                        tabHeader="Programming languages I'm familiar with"
+                        tablistItems={["C","C++","C#","JavaScript (+HTML/CSS)","Python"]} />
+                        
+                        <TabContent id="technologies"
+                        tabHeader="Technologies I'm familiar with"
+                        tablistItems={["ReactJS"]} />
+                        
+                        <TabContent id="sciences"
+                        tabHeader="Theory I've studied"
+                        tablistItems={["Data Structures & Algorithms","Object-Oriented Programming"]} />
+                        
+                        <TabContent id="activities"
+                        tabHeader="Student activities I've participated in"
+                        tablistItems={["ICPC: Participated in the 2022 ECPC after qualifying in the ECPC Qualifications.",
+                        "IEEE: Trained in the IEEExtreme Programming team with IEEE MUSB."]} />
                     </div>
                 </div>
             </section>
