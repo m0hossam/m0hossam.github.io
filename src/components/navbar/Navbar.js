@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navbar.css';
+import ResumePDF from './Mohamed_Hossam_Resume.pdf';
 
 export default class Navbar extends React.Component{
   openResponsiveNav = () => {
@@ -39,7 +40,7 @@ export default class Navbar extends React.Component{
           <li className="nav-item"><a className="nav-link" href="#skills">Skills</a></li>
           <li className="nav-item"><a className="nav-link" href="#projects">Projects</a></li>
           <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
-          <li className="nav-item"><button type="button" className="resume">Resume</button></li>
+          <li className="nav-item"><a href={ResumePDF} download="Mohamed_Hossam_Resume.pdf" target="_blank" rel="noopener noreferrer"><button type="button" className="resume">Resume</button></a></li>
         </ul>
       </nav>
     );
