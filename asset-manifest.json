@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.2915316e.css",
-    "main.js": "/static/js/main.e9e8f019.js",
+    "main.css": "/static/css/main.988f1fc0.css",
+    "main.js": "/static/js/main.5167c10a.js",
     "static/media/Mohamed_Hossam_Resume.pdf": "/static/media/Mohamed_Hossam_Resume.730f0d5b287b4f8c610e.pdf",
     "static/media/Chess.png": "/static/media/Chess.700b1bd28451225724f7.png",
     "static/media/coder_illustration.svg": "/static/media/coder_illustration.bbee5aefb1e31b48a45bb9fdcfbba50d.svg",
     "index.html": "/index.html",
-    "main.2915316e.css.map": "/static/css/main.2915316e.css.map",
-    "main.e9e8f019.js.map": "/static/js/main.e9e8f019.js.map"
+    "main.988f1fc0.css.map": "/static/css/main.988f1fc0.css.map",
+    "main.5167c10a.js.map": "/static/js/main.5167c10a.js.map"
   },
   "entrypoints": [
-    "static/css/main.2915316e.css",
-    "static/js/main.e9e8f019.js"
+    "static/css/main.988f1fc0.css",
+    "static/js/main.5167c10a.js"
   ]
 }
