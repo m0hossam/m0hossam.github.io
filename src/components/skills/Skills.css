@@ -50,7 +50,6 @@
 }
 
 .tab-content ul li::marker{
-    content: ">  ";
     color: var(--highlight);
     font-weight: bold;
 }

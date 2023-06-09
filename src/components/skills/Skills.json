@@ -1,0 +1,42 @@
+[
+    {
+        "id": "Languages",
+        "header": "Programming languages I'm familiar with",
+        "skills": [
+            "C/C++",
+            "C#",
+            "JavaScript",
+            "Python",
+            "TSQL",
+            "HTML5/CSS"
+        ]
+    },
+    {
+        "id": "Tech",
+        "header": "Tech tools I'm familiar with",
+        "skills": [
+            "React.js",
+            "SQL Server",
+            "Git"
+        ]
+    },
+    {
+        "id": "Theory",
+        "header": "Courses I've studied",
+        "skills": [
+            "Data Stuctures & Algorithms",
+            "Object-Oriented Programming",
+            "Relational Databases",
+            "Operating Systems",
+            "Digital Circuits & Computer Organization"
+        ]
+    },
+    {
+        "id": "Activities",
+        "header": "Student activities I've participated in",
+        "skills": [
+            "ICPC: Participated in the 2022 ECPC after ranking 2nd on my university in the qualifications.",
+            "IEEE: Trained in the IEEExtreme Programming team with IEEE MUSB."
+        ]
+    }
+]

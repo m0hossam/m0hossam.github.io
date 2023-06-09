@@ -14,8 +14,8 @@ export default function About(){
                         I like to build virtual stuff like apps, games and websites.
                         <br />
                         <br />
-                        I'm currently studying these topics: <span>Databases, Computer Organization.</span>
-                        My main interests are: <span>Software Engineering, Game Development and AI.</span>
+                        I'm currently studying <span>Databases</span> and developing a project involving <span>SQL & C#</span>. 
+                        My main interests are: <span>Software Engineering, Game Development and AI</span>.
                         <br />
                         <br />
                         I'm interested in new experiences that could enrich my knowledge
