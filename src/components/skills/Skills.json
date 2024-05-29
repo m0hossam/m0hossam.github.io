@@ -3,21 +3,22 @@
         "id": "Languages",
         "header": "Programming languages I'm familiar with",
         "skills": [
-            "C/C++",
             "C#",
+            "Java",
+            "C/C++",
             "JavaScript",
             "Python",
             "TSQL",
-            "HTML5/CSS"
+            "HTML/CSS"
         ]
     },
     {
         "id": "Tech",
         "header": "Tech tools I'm familiar with",
         "skills": [
+            "ASP.NET Core MVC",
             "React.js",
-            "SQL Server",
-            "Git"
+            "Git VCS"
         ]
     },
     {
@@ -26,9 +27,10 @@
         "skills": [
             "Data Stuctures & Algorithms",
             "Object-Oriented Programming",
-            "Relational Databases",
+            "Databases Systems",
+            "Software Engineering",
             "Operating Systems",
-            "Digital Circuits & Computer Organization"
+            "Computer Architecture"
         ]
     },
     {
